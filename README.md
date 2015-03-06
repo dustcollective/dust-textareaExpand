@@ -31,6 +31,7 @@ $('.textarea-expand').textareaExpand({
 * numberOfLinesToAdd. Integer. How many lines to add to the text area when expanding. Default 2.
 * cloneID. String. The ID to give the clone element. Default 'textarea-clone'.
 * addCSS. Boolean. Whether or not to add plugin-specific CSS or not. Default true.
+* expandedClass. String. The class to add when the textarea expands. Default null.
 
 ## How does it work?
 So you've got your containing element. Firstly, we create a clone of the textarea as a sibling. This means that it will have all the same classes and styles as the actual textarea. We add some additional styles to the clone to make it invisible have no height, so that the scrollHeight of the clone will be the height of the text.

@@ -8,7 +8,8 @@
 			'lineOffset' : 1,
 			'numberOfLinesToAdd' : 2,
 			'cloneID' : 'textarea-clone',
-			'addCSS' : true
+			'addCSS' : true,
+			'expandedClass' : null
 		}, options || {});
 
 		var textarea = self.find('textarea');
@@ -102,6 +103,8 @@
 			var heightToAdd = _this.getLineHeight(parseInt(settings.numberOfLinesToAdd));
 
 			textarea.height(textareaClone[0].scrollHeight + heightToAdd);
+
+			self.addClass(settings.expandedClass);
 
 			return _this;
 		}
